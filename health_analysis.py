@@ -253,3 +253,20 @@ plt.xlabel("Predicted")
 plt.ylabel("Actual")
 
 plt.show()
+
+# Feature Influence Analysis
+importance = pd.Series(
+    model.coef_[0],
+    index=X.columns
+).sort_values()
+
+plt.figure()
+importance.plot(
+    kind="barh",
+    figsize=(8, 8)
+)
+
+plt.title("Feature Influence on Model Prediction")
+plt.xlabel("Coefficient")
+
+plt.show()
