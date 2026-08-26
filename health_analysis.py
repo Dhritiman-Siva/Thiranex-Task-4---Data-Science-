@@ -105,3 +105,16 @@ plt.xlabel("Heart Disease")
 plt.ylabel("Number of Patients")
 
 plt.show()
+
+plt.figure(figsize=(6, 4))
+sns.boxplot(
+    x="HeartDisease",
+    y="Age",
+    data=df
+)
+
+plt.title("Age Distribution by Heart Disease")
+plt.xlabel("Heart Disease")
+plt.ylabel("Age")
+
+plt.show()
