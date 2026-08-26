@@ -157,3 +157,17 @@ plt.xlabel("Chest Pain Type")
 plt.ylabel("Number of Patients")
 
 plt.show()
+
+numeric_columns = [
+    "Age",
+    "RestingBP",
+    "Cholesterol",
+    "MaxHR",
+    "Oldpeak",
+    "HeartDisease"
+]
+
+correlation = df[numeric_columns].corr()
+
+print("\n--- Correlation Matrix ---")
+print(correlation)
