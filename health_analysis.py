@@ -131,3 +131,16 @@ plt.xlabel("Heart Disease")
 plt.ylabel("Cholesterol")
 
 plt.show()
+
+plt.figure(figsize=(6, 4))
+sns.boxplot(
+    x="HeartDisease",
+    y="MaxHR",
+    data=df
+)
+
+plt.title("Maximum Heart Rate by Heart Disease")
+plt.xlabel("Heart Disease")
+plt.ylabel("Maximum Heart Rate")
+
+plt.show()
