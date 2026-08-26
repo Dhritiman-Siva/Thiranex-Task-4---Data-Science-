@@ -118,3 +118,16 @@ plt.xlabel("Heart Disease")
 plt.ylabel("Age")
 
 plt.show()
+
+plt.figure(figsize=(6, 4))
+sns.boxplot(
+    x="HeartDisease",
+    y="Cholesterol",
+    data=df
+)
+
+plt.title("Cholesterol Levels by Heart Disease")
+plt.xlabel("Heart Disease")
+plt.ylabel("Cholesterol")
+
+plt.show()
