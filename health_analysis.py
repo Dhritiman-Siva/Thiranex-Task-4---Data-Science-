@@ -70,3 +70,19 @@ df["HeartDisease"] = (df["HeartDisease"] > 0).astype(int)
 
 print("\n--- Binary Heart Disease Values ---")
 print(df["HeartDisease"].value_counts())
+
+print("\n--- Statistical Summary ---")
+print(df.describe())
+
+print("\n--- Average Age ---")
+print(df["Age"].mean())
+
+print("\n--- Average Cholesterol ---")
+print(df["Cholesterol"].mean())
+
+print("\n--- Average Resting Blood Pressure ---")
+print(df["RestingBP"].mean())
+
+print("\n--- Average Maximum Heart Rate ---")
+print(df["MaxHR"].mean())
+
