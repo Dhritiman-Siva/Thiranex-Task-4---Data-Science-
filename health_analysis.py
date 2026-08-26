@@ -171,3 +171,13 @@ correlation = df[numeric_columns].corr()
 
 print("\n--- Correlation Matrix ---")
 print(correlation)
+
+plt.figure(figsize=(8, 6))
+sns.heatmap(
+    correlation,
+    annot=True
+)
+
+plt.title("Correlation Between Health Variables")
+
+plt.show()
