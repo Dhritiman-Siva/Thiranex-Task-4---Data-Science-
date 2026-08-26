@@ -198,3 +198,17 @@ print("\n--- Encoded Features Shape ---")
 print(X.shape)
 print("\n--- Encoded Features Preview ---")
 print(X.head())
+
+# Split dataset into training (80%) and testing (20%) sets
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X,
+    y,
+    test_size=0.20,
+    random_state=42
+)
+
+print("\n--- Train Test Split ---")
+print("Training data:", X_train.shape)
+print("Testing data:", X_test.shape)
