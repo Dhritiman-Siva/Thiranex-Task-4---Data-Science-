@@ -104,6 +104,7 @@ plt.title("Heart Disease Distribution")
 plt.xlabel("Heart Disease")
 plt.ylabel("Number of Patients")
 
+plt.savefig("heart_disease_distribution.png", bbox_inches="tight")
 plt.show()
 
 plt.figure(figsize=(6, 4))
@@ -117,6 +118,7 @@ plt.title("Age Distribution by Heart Disease")
 plt.xlabel("Heart Disease")
 plt.ylabel("Age")
 
+plt.savefig("age_distribution.png", bbox_inches="tight")
 plt.show()
 
 plt.figure(figsize=(6, 4))
@@ -130,6 +132,7 @@ plt.title("Cholesterol Levels by Heart Disease")
 plt.xlabel("Heart Disease")
 plt.ylabel("Cholesterol")
 
+plt.savefig("cholesterol_distribution.png", bbox_inches="tight")
 plt.show()
 
 plt.figure(figsize=(6, 4))
@@ -143,6 +146,7 @@ plt.title("Maximum Heart Rate by Heart Disease")
 plt.xlabel("Heart Disease")
 plt.ylabel("Maximum Heart Rate")
 
+plt.savefig("max_hr_distribution.png", bbox_inches="tight")
 plt.show()
 
 plt.figure(figsize=(6, 4))
@@ -156,6 +160,7 @@ plt.title("Chest Pain Type and Heart Disease")
 plt.xlabel("Chest Pain Type")
 plt.ylabel("Number of Patients")
 
+plt.savefig("chest_pain_distribution.png", bbox_inches="tight")
 plt.show()
 
 numeric_columns = [
@@ -180,6 +185,7 @@ sns.heatmap(
 
 plt.title("Correlation Between Health Variables")
 
+plt.savefig("correlation_heatmap.png", bbox_inches="tight")
 plt.show()
 
 # Prepare data for machine learning
@@ -252,6 +258,7 @@ plt.title("Heart Disease Prediction - Confusion Matrix")
 plt.xlabel("Predicted")
 plt.ylabel("Actual")
 
+plt.savefig("confusion_matrix.png", bbox_inches="tight")
 plt.show()
 
 # Feature Influence Analysis
@@ -269,4 +276,5 @@ importance.plot(
 plt.title("Feature Influence on Model Prediction")
 plt.xlabel("Coefficient")
 
+plt.savefig("feature_influence.png", bbox_inches="tight")
 plt.show()
