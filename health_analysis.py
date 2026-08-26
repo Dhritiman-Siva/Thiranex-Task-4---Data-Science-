@@ -86,3 +86,11 @@ print(df["RestingBP"].mean())
 print("\n--- Average Maximum Heart Rate ---")
 print(df["MaxHR"].mean())
 
+print("\n--- Average Values by Heart Disease ---")
+print(
+    df.groupby("HeartDisease")[
+        ["Age", "RestingBP", "Cholesterol", "MaxHR"]
+    ].mean()
+)
+
+
