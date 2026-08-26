@@ -181,3 +181,20 @@ sns.heatmap(
 plt.title("Correlation Between Health Variables")
 
 plt.show()
+
+# Prepare data for machine learning
+X = df.drop("HeartDisease", axis=1)
+y = df["HeartDisease"]
+
+print("\n--- Features Shape ---")
+print(X.shape)
+print("\n--- Target Shape ---")
+print(y.shape)
+
+# Convert categorical variables into dummy/indicator variables
+X = pd.get_dummies(X, drop_first=True)
+
+print("\n--- Encoded Features Shape ---")
+print(X.shape)
+print("\n--- Encoded Features Preview ---")
+print(X.head())
