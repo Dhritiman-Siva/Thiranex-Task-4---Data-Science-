@@ -94,3 +94,14 @@ print(
 )
 
 
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+plt.figure(figsize=(6, 4))
+df["HeartDisease"].value_counts().plot(kind="bar")
+
+plt.title("Heart Disease Distribution")
+plt.xlabel("Heart Disease")
+plt.ylabel("Number of Patients")
+
+plt.show()
