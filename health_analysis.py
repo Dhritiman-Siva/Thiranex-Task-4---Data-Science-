@@ -224,3 +224,14 @@ y_pred = model.predict(X_test)
 
 print("\n--- Model Training Complete ---")
 print("Predictions preview:", y_pred[:10])
+
+# Evaluate the model
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import classification_report
+
+accuracy = accuracy_score(y_test, y_pred)
+
+print("\nModel Accuracy:", accuracy)
+
+print("\n--- Classification Report ---")
+print(classification_report(y_test, y_pred))
