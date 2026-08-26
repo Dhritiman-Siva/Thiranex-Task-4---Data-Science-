@@ -144,3 +144,16 @@ plt.xlabel("Heart Disease")
 plt.ylabel("Maximum Heart Rate")
 
 plt.show()
+
+plt.figure(figsize=(6, 4))
+sns.countplot(
+    x="ChestPainType",
+    hue="HeartDisease",
+    data=df
+)
+
+plt.title("Chest Pain Type and Heart Disease")
+plt.xlabel("Chest Pain Type")
+plt.ylabel("Number of Patients")
+
+plt.show()
