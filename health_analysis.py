@@ -235,3 +235,21 @@ print("\nModel Accuracy:", accuracy)
 
 print("\n--- Classification Report ---")
 print(classification_report(y_test, y_pred))
+
+# Confusion Matrix
+from sklearn.metrics import confusion_matrix
+
+cm = confusion_matrix(y_test, y_pred)
+
+plt.figure(figsize=(6, 4))
+sns.heatmap(
+    cm,
+    annot=True,
+    fmt="d"
+)
+
+plt.title("Heart Disease Prediction - Confusion Matrix")
+plt.xlabel("Predicted")
+plt.ylabel("Actual")
+
+plt.show()
